@@ -1,4 +1,4 @@
-StringPlus - C++String Enhancement Library
+StringPlus - Open Source C++String Enhancement Library
 
 StringPlus is an optimized extension of the C++standard library std:: string, providing richer and more convenient string manipulation functions.
 
