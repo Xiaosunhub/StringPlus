@@ -38,22 +38,30 @@ You can also directly place the header file in the project directory and use a r
 
 #include <StringPlus.h>
 
-int main() {
+int main()
+
+{
 //Create a string
-std::StringPlus str = "  Hello World! 123 ";
+
+    std::StringPlus str = "  Hello World! 123 ";
 
 //Trim and convert uppercase letters
-str.trim().toUpper();
+
+    str.trim().toUpper();
 
 //Type conversion
-int num = str.substr(12).toInt(); //Extract '123' and convert it to an integer
+
+    int num = str.substr(12).toInt(); //Extract '123' and convert it to an integer
 	
 //Regular replacement
-str.regexReplace("WORLD", "CPP");
+
+    str.regexReplace("WORLD", "CPP");
 	
 //Character statistics
-int sum = str.GetCharTypeCount()["upper"];
 
-return 0;
+    int sum = str.GetCharTypeCount()["upper"];
+
+    return 0;
+
 }
 
