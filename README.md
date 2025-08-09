@@ -17,7 +17,7 @@ StringPlus is an optimized extension of the C++standard library std:: string, pr
 
 ##Installation Guide
 #Preconditions
--C++17 or higher (/sd: c++17)
+-C++17 or higher (/std: c++17)
 -Windows platform (if wide character conversion function is required)
 
 ##Installation steps
