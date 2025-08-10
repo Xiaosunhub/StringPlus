@@ -53,7 +53,6 @@ int main()
 	
 //Character statistics
     int sum = str.GetCharTypeCount()["upper"];
-
     return 0;
 }
 
