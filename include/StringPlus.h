@@ -9,7 +9,7 @@
 //  |_________/    |_|     |__|      \__\  |__________|  |__|      \____|  \__________|   |__|        |_________|   \________/   |_________/
 // 
 // 
-//Copyright(c)[2025][ËïºèÓî]
+//Copyright(c)[2025][å­™é¸¿å®‡]
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy
 //of this software and associated documentation files(the "Software"), to deal
@@ -491,7 +491,7 @@ namespace std
             return result;        
         }
 
-        StringPlus trimRightCopy() const                                                // Defined a function trimRightCopy()£¬ to create a right trim copy of the current string (keeping the original string unchanged), implemented by copying construction+trimRight(), and returning the processed new object
+        StringPlus trimRightCopy() const                                                // Defined a function trimRightCopy()Â£Â¬ to create a right trim copy of the current string (keeping the original string unchanged), implemented by copying construction+trimRight(), and returning the processed new object
         {
             StringPlus result(str);
             result.trimRight();
@@ -629,7 +629,7 @@ namespace std
             }
         }
 
-        double toDouble(bool* ok = nullptr)                                            // Defined a function toDouble()£¬ to convert a string to a double type, using std::stod() for secure conversion. Optional parameter ok returns a success status, throws an exception string_to-type_out_of_range when out of bounds, returns 0.0 for invalid input and marks failure
+        double toDouble(bool* ok = nullptr)                                            // Defined a function toDouble()Â£Â¬ to convert a string to a double type, using std::stod() for secure conversion. Optional parameter ok returns a success status, throws an exception string_to-type_out_of_range when out of bounds, returns 0.0 for invalid input and marks failure
         {
             try
             {
@@ -695,7 +695,7 @@ namespace std
         void pop_back() { str.pop_back(); }          // Defined a function pop_back(), to delete the last character (char) of a string
 
         // Regular expression support
-        bool matches(const StringPlus& pattern) const                                          // Defined a function matches()£¬ for regular expression to check if a string exactly matches a given pattern. If the conversion fails (regex_error, runtime_error), it throws an exception string_error and returns false for other exceptions
+        bool matches(const StringPlus& pattern) const                                          // Defined a function matches()Â£Â¬ for regular expression to check if a string exactly matches a given pattern. If the conversion fails (regex_error, runtime_error), it throws an exception string_error and returns false for other exceptions
         {
             try {
                 std::regex re(pattern.str);
@@ -970,5 +970,6 @@ inline std::istream& operator>>(std::istream& is, std::StringPlus& str)       //
 // Type alias
 using StringPlusArray = std::vector<std::StringPlus>; // Define the dynamic array type of StringPlus, based on the standard library's std:: vector container implementation, providing complete container functionality such as dynamic scaling and iterator access, suitable for scenarios where multiple StringPlus objects need to be stored (such as string lists, batch processing, etc.)
 using StringPlus_ptr = std::StringPlus*;              // Define the primitive pointer type StringPlus_ptr for StringPlus, used to directly manage or manipulate StringPlus objects in heap memory, suitable for low-level operations that require explicit control of memory lifecycle or interaction with C-style APIs
+
 
 #endif
