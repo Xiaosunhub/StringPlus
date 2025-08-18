@@ -972,4 +972,4 @@ using StringPlusArray = std::vector<std::StringPlus>; // Define the dynamic arra
 using StringPlus_ptr = std::StringPlus*;              // Define the primitive pointer type StringPlus_ptr for StringPlus, used to directly manage or manipulate StringPlus objects in heap memory, suitable for low-level operations that require explicit control of memory lifecycle or interaction with C-style APIs
 
 
-#endif
+#endif // __INC_STRINGPLUS_H__
