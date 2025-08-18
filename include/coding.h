@@ -9,7 +9,7 @@
 //  |_________/    |_|     |__|      \__\  |__________|  |__|      \____|  \__________|   |__|        |_________|   \________/   |_________/
 // 
 // 
-//Copyright(c)[2025][ËïºèÓî]
+//Copyright(c)[2025][å­™é¸¿å®‡]
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy
 //of this software and associated documentation files(the "Software"), to deal
@@ -215,5 +215,6 @@ namespace std
     }
 
 } // namespace std
+
 
 #endif // __INC_STRINGPLUS_CODING_H__
