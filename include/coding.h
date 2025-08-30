@@ -41,7 +41,7 @@
 #include <algorithm>
 #include <stdexcept>
 
-namespace std 
+namespace coding 
 {
 
     // ===================== Caesar encoding / decoding =====================
@@ -218,3 +218,4 @@ namespace std
 
 
 #endif // __INC_STRINGPLUS_CODING_H__
+
