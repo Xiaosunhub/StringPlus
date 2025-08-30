@@ -65,7 +65,7 @@
 #define StringPlusLetterTypeUpper "upper"    // Letter Upper
 #define StringPlusLetterTypeLower "lower"    // Letter Lower
 
-namespace std 
+namespace sp 
 {
 
     class string_error : public std::exception                                   // Defined a C++ exception class called string_error, which inherits from the standard std::exception and provides two construction methods: string and character pointer. It is used to encapsulate error information related to string processing and implements cross platform compatibility for exception handling through macro definitions
@@ -949,7 +949,7 @@ namespace std
     size_t strlen(std::string str) { return str.size(); }         // Defined a function strlen(), to provide a length query for the standard string std:: string
     size_t strmaxsize(std::string str) { return str.max_size(); } // Defined a function strmaxsize(), to return the maximum theoretical length that std:: string can support in the current system environment, which depends on the memory architecture and standard library implementation
     
-    StringPlus operator""sp(const char* str, size_t size) { return StringPlus(str, size); } // Define the Literal Operator (UDL) sp, to directly construct a StringPlus object using the concise syntax of "text" sp, efficiently forwarding C-style strings and their lengths to the constructor
+    StringPlus operator""_sp(const char* str, size_t size) { return StringPlus(str, size); } // Define the Literal Operator (UDL) sp, to directly construct a StringPlus object using the concise syntax of "text" sp, efficiently forwarding C-style strings and their lengths to the constructor
     
 } // namespace std
 
@@ -973,3 +973,4 @@ using StringPlus_ptr = std::StringPlus*;              // Define the primitive po
 
 
 #endif // __INC_STRINGPLUS_H__
+
