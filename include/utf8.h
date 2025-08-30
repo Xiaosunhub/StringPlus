@@ -43,7 +43,7 @@
 #include <stdexcept>
 #include <StringPlus.h>
 
-namespace std 
+namespace UTF8 
 {
     class UTF8 : public std::StringPlus
     {
@@ -189,3 +189,4 @@ namespace std
 
 
 #endif // __INC_STRINGPLUS_UTF8_H__
+
